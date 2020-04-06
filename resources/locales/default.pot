@@ -1,0 +1,332 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2020-04-06 14:45-0300\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: Controller/AreasController.php:54
+#: Controller/AreasController.php:79
+msgid "The area has been saved."
+msgstr ""
+
+#: Controller/AreasController.php:58
+#: Controller/AreasController.php:83
+msgid "The area could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/AreasController.php:101
+msgid "The area has been deleted."
+msgstr ""
+
+#: Controller/AreasController.php:103
+msgid "The area could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/GroupsController.php:54
+#: Controller/GroupsController.php:80
+msgid "The group has been saved."
+msgstr ""
+
+#: Controller/GroupsController.php:58
+#: Controller/GroupsController.php:84
+msgid "The group could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/GroupsController.php:103
+msgid "The group has been deleted."
+msgstr ""
+
+#: Controller/GroupsController.php:105
+msgid "The group could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/UsersController.php:63
+#: Controller/UsersController.php:88
+msgid "The user has been saved."
+msgstr ""
+
+#: Controller/UsersController.php:67
+#: Controller/UsersController.php:92
+msgid "The user could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/UsersController.php:110
+msgid "The user has been deleted."
+msgstr ""
+
+#: Controller/UsersController.php:112
+msgid "The user could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/UsersController.php:134
+msgid "Invalid username or password"
+msgstr ""
+
+#: Areas/add.php:10
+#: Areas/edit.php:10
+#: Areas/index.php:17
+#: Areas/view.php:10
+#: Areas/view.php:42
+#: Groups/add.php:10
+#: Groups/edit.php:10
+#: Groups/index.php:16
+#: Groups/view.php:10
+#: Groups/view.php:39
+#: Groups/view.php:67
+#: Users/add.php:10
+#: Users/edit.php:10
+#: Users/index.php:17
+#: Users/view.php:10
+#: Users/view.php:46
+msgid "Actions"
+msgstr ""
+
+#: Areas/add.php:11
+#: Areas/edit.php:16
+#: Areas/view.php:13
+msgid "List Areas"
+msgstr ""
+
+#: Areas/add.php:18
+msgid "Add Area"
+msgstr ""
+
+#: Areas/add.php:25
+#: Areas/edit.php:30
+#: Groups/add.php:25
+#: Groups/edit.php:30
+#: Users/add.php:26
+#: Users/edit.php:31
+msgid "Submit"
+msgstr ""
+
+#: Areas/edit.php:12
+#: Areas/index.php:29
+#: Areas/view.php:51
+#: Groups/edit.php:12
+#: Groups/index.php:27
+#: Groups/view.php:49
+#: Groups/view.php:78
+#: Users/edit.php:12
+#: Users/index.php:29
+#: Users/view.php:55
+msgid "Delete"
+msgstr ""
+
+#: Areas/edit.php:14
+#: Areas/index.php:29
+#: Areas/view.php:12
+#: Areas/view.php:51
+#: Groups/edit.php:14
+#: Groups/index.php:27
+#: Groups/view.php:12
+#: Groups/view.php:49
+#: Groups/view.php:78
+#: Users/edit.php:14
+#: Users/index.php:29
+#: Users/view.php:12
+#: Users/view.php:55
+msgid "Are you sure you want to delete # {0}?"
+msgstr ""
+
+#: Areas/edit.php:23
+#: Areas/view.php:11
+msgid "Edit Area"
+msgstr ""
+
+#: Areas/index.php:8
+#: Areas/view.php:14
+msgid "New Area"
+msgstr ""
+
+#: Areas/index.php:9
+#: layout/default.php:46
+msgid "Areas"
+msgstr ""
+
+#: Areas/index.php:27
+#: Areas/view.php:49
+#: Groups/index.php:25
+#: Groups/view.php:47
+#: Groups/view.php:76
+#: Users/index.php:27
+#: Users/view.php:53
+#: View/Helper/PaginatorHelper.php:1266
+msgid "View"
+msgstr ""
+
+#: Areas/index.php:28
+#: Areas/view.php:50
+#: Groups/index.php:26
+#: Groups/view.php:48
+#: Groups/view.php:77
+#: Users/index.php:28
+#: Users/view.php:54
+msgid "Edit"
+msgstr ""
+
+#: Areas/index.php:38
+#: Groups/index.php:36
+#: Users/index.php:38
+msgid "first"
+msgstr ""
+
+#: Areas/index.php:39
+#: Groups/index.php:37
+#: Users/index.php:39
+msgid "previous"
+msgstr ""
+
+#: Areas/index.php:41
+#: Groups/index.php:39
+#: Users/index.php:41
+msgid "next"
+msgstr ""
+
+#: Areas/index.php:42
+#: Groups/index.php:40
+#: Users/index.php:42
+msgid "last"
+msgstr ""
+
+#: Areas/index.php:44
+#: Groups/index.php:42
+#: Users/index.php:44
+msgid "Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total"
+msgstr ""
+
+#: Areas/view.php:12
+msgid "Delete Area"
+msgstr ""
+
+#: Areas/view.php:22
+#: Groups/view.php:37
+msgid "Title"
+msgstr ""
+
+#: Areas/view.php:26
+#: Groups/view.php:38
+msgid "Action"
+msgstr ""
+
+#: Areas/view.php:30
+#: Areas/view.php:40
+#: Groups/view.php:26
+#: Groups/view.php:36
+#: Groups/view.php:63
+#: Users/view.php:34
+#: Users/view.php:44
+msgid "Id"
+msgstr ""
+
+#: Areas/view.php:35
+#: Users/view.php:39
+msgid "Related Groups"
+msgstr ""
+
+#: Areas/view.php:41
+#: Groups/view.php:22
+#: Groups/view.php:64
+#: Users/view.php:22
+#: Users/view.php:45
+msgid "Name"
+msgstr ""
+
+#: Groups/add.php:11
+#: Groups/edit.php:16
+#: Groups/view.php:13
+msgid "List Groups"
+msgstr ""
+
+#: Groups/add.php:18
+msgid "Add Group"
+msgstr ""
+
+#: Groups/edit.php:23
+#: Groups/view.php:11
+msgid "Edit Group"
+msgstr ""
+
+#: Groups/index.php:8
+#: Groups/view.php:14
+msgid "New Group"
+msgstr ""
+
+#: Groups/index.php:9
+#: layout/default.php:47
+msgid "Groups"
+msgstr ""
+
+#: Groups/view.php:12
+msgid "Delete Group"
+msgstr ""
+
+#: Groups/view.php:31
+msgid "Related Areas"
+msgstr ""
+
+#: Groups/view.php:58
+msgid "Related Users"
+msgstr ""
+
+#: Groups/view.php:65
+#: Users/view.php:26
+msgid "Email"
+msgstr ""
+
+#: Groups/view.php:66
+#: Users/view.php:30
+msgid "Password"
+msgstr ""
+
+#: Users/add.php:11
+#: Users/edit.php:16
+#: Users/view.php:13
+msgid "List Users"
+msgstr ""
+
+#: Users/add.php:18
+msgid "Add User"
+msgstr ""
+
+#: Users/edit.php:23
+#: Users/view.php:11
+msgid "Edit User"
+msgstr ""
+
+#: Users/index.php:8
+#: Users/view.php:14
+msgid "New User"
+msgstr ""
+
+#: Users/index.php:9
+#: layout/default.php:48
+msgid "Users"
+msgstr ""
+
+#: Users/login.php:12
+msgid "Please enter your username and password"
+msgstr ""
+
+#: Users/login.php:16
+msgid "Login"
+msgstr ""
+
+#: Users/view.php:12
+msgid "Delete User"
+msgstr ""
+
+#: layout/error.php:40
+msgid "Back"
+msgstr ""
+

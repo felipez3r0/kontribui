@@ -1,0 +1,246 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2020-04-06 13:52-0300\n"
+"PO-Revision-Date: 2020-04-06 14:47-0300\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 2.3\n"
+"Last-Translator: \n"
+"Language: pt_BR\n"
+
+#: Controller/AreasController.php:54 Controller/AreasController.php:79
+msgid "The area has been saved."
+msgstr "A área foi salva."
+
+#: Controller/AreasController.php:58 Controller/AreasController.php:83
+msgid "The area could not be saved. Please, try again."
+msgstr "Não foi possível salvar esta área. Por favor, tente novamente."
+
+#: Controller/AreasController.php:101
+msgid "The area has been deleted."
+msgstr "A área foi excluída."
+
+#: Controller/AreasController.php:103
+msgid "The area could not be deleted. Please, try again."
+msgstr "Não foi possível excluir esta área. Por favor, tente novamente."
+
+#: Controller/GroupsController.php:54 Controller/GroupsController.php:80
+msgid "The group has been saved."
+msgstr "O grupo foi salvo."
+
+#: Controller/GroupsController.php:58 Controller/GroupsController.php:84
+msgid "The group could not be saved. Please, try again."
+msgstr "Não foi possível salvar este grupo. Por favor, tente novamente."
+
+#: Controller/GroupsController.php:103
+msgid "The group has been deleted."
+msgstr "O grupo foi excluído."
+
+#: Controller/GroupsController.php:105
+msgid "The group could not be deleted. Please, try again."
+msgstr "Não foi possível excluir este grupo. Por favor, tente novamente."
+
+#: Controller/UsersController.php:54 Controller/UsersController.php:79
+msgid "The user has been saved."
+msgstr "O usuário foi salvo."
+
+#: Controller/UsersController.php:58 Controller/UsersController.php:83
+msgid "The user could not be saved. Please, try again."
+msgstr "Não foi possível salvar este usuário. Por favor, tente novamente."
+
+#: Controller/UsersController.php:101
+msgid "The user has been deleted."
+msgstr "O usuário foi excluído."
+
+#: Controller/UsersController.php:103
+msgid "The user could not be deleted. Please, try again."
+msgstr "Não foi possível excluir este usuário. Por favor, tente novamente."
+
+#: Areas/add.php:10 Areas/edit.php:10 Areas/index.php:17 Areas/view.php:10
+#: Areas/view.php:42 Groups/add.php:10 Groups/edit.php:10 Groups/index.php:16
+#: Groups/view.php:10 Groups/view.php:39 Groups/view.php:67 Users/add.php:10
+#: Users/edit.php:10 Users/index.php:18 Users/view.php:10 Users/view.php:46
+msgid "Actions"
+msgstr "Ações"
+
+#: Areas/add.php:11 Areas/edit.php:16 Areas/view.php:13
+msgid "List Areas"
+msgstr "Listar Áreas"
+
+#: Areas/add.php:18
+msgid "Add Area"
+msgstr "Adicionar Áreas"
+
+#: Areas/add.php:25 Areas/edit.php:30 Groups/add.php:25 Groups/edit.php:30
+#: Users/add.php:26 Users/edit.php:31
+msgid "Submit"
+msgstr "Enviar"
+
+#: Areas/edit.php:12 Areas/index.php:29 Areas/view.php:51 Groups/edit.php:12
+#: Groups/index.php:27 Groups/view.php:49 Groups/view.php:78 Users/edit.php:12
+#: Users/index.php:31 Users/view.php:55
+msgid "Delete"
+msgstr "Remover"
+
+#: Areas/edit.php:14 Areas/index.php:29 Areas/view.php:12 Areas/view.php:51
+#: Groups/edit.php:14 Groups/index.php:27 Groups/view.php:12 Groups/view.php:49
+#: Groups/view.php:78 Users/edit.php:14 Users/index.php:31 Users/view.php:12
+#: Users/view.php:55
+msgid "Are you sure you want to delete # {0}?"
+msgstr "Tem certeza de que deseja remover # {0}?"
+
+#: Areas/edit.php:23 Areas/view.php:11
+msgid "Edit Area"
+msgstr "Editar Área"
+
+#: Areas/index.php:8 Areas/view.php:14
+msgid "New Area"
+msgstr "Nova Área"
+
+#: Areas/index.php:9
+msgid "Areas"
+msgstr "Áreas"
+
+#: Areas/index.php:27 Areas/view.php:49 Groups/index.php:25 Groups/view.php:47
+#: Groups/view.php:76 Users/index.php:29 Users/view.php:53
+#: View/Helper/PaginatorHelper.php:1266
+msgid "View"
+msgstr "Ver"
+
+#: Areas/index.php:28 Areas/view.php:50 Groups/index.php:26 Groups/view.php:48
+#: Groups/view.php:77 Users/index.php:30 Users/view.php:54
+msgid "Edit"
+msgstr "Editar"
+
+#: Areas/index.php:38 Groups/index.php:36 Users/index.php:40
+msgid "first"
+msgstr "primeiro"
+
+#: Areas/index.php:39 Groups/index.php:37 Users/index.php:41
+msgid "previous"
+msgstr "anterior"
+
+#: Areas/index.php:41 Groups/index.php:39 Users/index.php:43
+msgid "next"
+msgstr "próximo"
+
+#: Areas/index.php:42 Groups/index.php:40 Users/index.php:44
+msgid "last"
+msgstr "último"
+
+#: Areas/index.php:44 Groups/index.php:42 Users/index.php:46
+msgid ""
+"Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} "
+"total"
+msgstr ""
+"Página {{page}} de {{pages}}, mostrando {{current}} registro(s) de {{count}} "
+"no total"
+
+#: Areas/view.php:12
+msgid "Delete Area"
+msgstr "Remover Área"
+
+#: Areas/view.php:22 Groups/view.php:37
+msgid "Title"
+msgstr "Título"
+
+#: Areas/view.php:26 Groups/view.php:38
+msgid "Action"
+msgstr "Ação"
+
+#: Areas/view.php:30 Areas/view.php:40 Groups/view.php:26 Groups/view.php:36
+#: Groups/view.php:63 Users/view.php:34 Users/view.php:44
+msgid "Id"
+msgstr "Id"
+
+#: Areas/view.php:35 Users/view.php:39
+msgid "Related Groups"
+msgstr "Grupos relacionados"
+
+#: Areas/view.php:41 Groups/view.php:22 Groups/view.php:64 Users/view.php:22
+#: Users/view.php:45
+msgid "Name"
+msgstr "Nome"
+
+#: Groups/add.php:11 Groups/edit.php:16 Groups/view.php:13
+msgid "List Groups"
+msgstr "Listar Grupos"
+
+#: Groups/add.php:18
+msgid "Add Group"
+msgstr "Adicionar Grupo"
+
+#: Groups/edit.php:23 Groups/view.php:11
+msgid "Edit Group"
+msgstr "Editar Grupo"
+
+#: Groups/index.php:8 Groups/view.php:14
+msgid "New Group"
+msgstr "Novo Grupo"
+
+#: Groups/index.php:9
+msgid "Groups"
+msgstr "Grupos"
+
+#: Groups/view.php:12
+msgid "Delete Group"
+msgstr "Remover Grupo"
+
+#: Groups/view.php:31
+msgid "Related Areas"
+msgstr "Áreas relacionadas"
+
+#: Groups/view.php:58
+msgid "Related Users"
+msgstr "Usuários relacionados"
+
+#: Groups/view.php:65 Users/view.php:26
+msgid "Email"
+msgstr "E-mail"
+
+#: Groups/view.php:66 Users/view.php:30
+msgid "Password"
+msgstr "Senha"
+
+#: Users/add.php:11 Users/edit.php:16 Users/view.php:13
+msgid "List Users"
+msgstr "Listar Usuários"
+
+#: Users/add.php:18
+msgid "Add User"
+msgstr "Adicionar Usuário"
+
+#: Users/edit.php:23 Users/view.php:11
+msgid "Edit User"
+msgstr "Editar Usuário"
+
+#: Users/index.php:8 Users/view.php:14
+msgid "New User"
+msgstr "Novo Usuário"
+
+#: Users/index.php:9
+msgid "Users"
+msgstr "Usuários"
+
+#: Users/login.php:12
+msgid "Please enter your username and password"
+msgstr "Por favor, digite seu e-mail e senha"
+
+#: Users/login.php:16
+msgid "Login"
+msgstr "Acessar"
+
+#: Users/view.php:12
+msgid "Delete User"
+msgstr "Remover Usuário"
+
+#: layout/error.php:40
+msgid "Back"
+msgstr "Voltar"
