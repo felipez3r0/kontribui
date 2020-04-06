@@ -1,2 +1,2 @@
-# kontribui
-Kontribui - Project
+# Kontribui - Project
+![Kontribui](/webroot/img/kontribui.svg)
