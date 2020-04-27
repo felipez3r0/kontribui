@@ -19,7 +19,7 @@ To update the dependencies:
 composer install
 ```
 
-Update the `config\app.php` with your database information
+Update the `config\app_local.php` with your database information
 
 To start the server:
 
