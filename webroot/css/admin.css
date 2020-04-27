@@ -172,4 +172,7 @@ th {
     .desc:after {
         content: " \2190";
     }
+    .top-nav-title{
+        margin-right: 10px;
+    }
 }

@@ -18,8 +18,9 @@
                 <legend><?= __('Add Area') ?></legend>
                 <?php
                     echo $this->Form->control('title');
+                    echo $this->Form->control('controller');
                     echo $this->Form->control('action');
-                    echo $this->Form->control('groups._ids', ['options' => $groups]);
+                    echo $this->Form->control('groups._ids', ['options' => $groups,'class'=>'select2']);
                 ?>
             </fieldset>
             <?= $this->Form->button(__('Submit')) ?>

@@ -10,6 +10,7 @@ use Cake\ORM\Entity;
  *
  * @property int $id
  * @property string|null $title
+ * @property string|null $controller
  * @property string|null $action
  *
  * @property \App\Model\Entity\Group[] $groups
@@ -27,6 +28,7 @@ class Area extends Entity
      */
     protected $_accessible = [
         'title' => true,
+        'controller' => true,
         'action' => true,
         'groups' => true,
     ];

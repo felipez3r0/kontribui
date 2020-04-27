@@ -25,7 +25,7 @@
                     echo $this->Form->control('name');
                     echo $this->Form->control('email');
                     echo $this->Form->control('password',['value'=>'']);
-                    echo $this->Form->control('groups._ids', ['options' => $groups]);
+                    echo $this->Form->control('groups._ids', ['options' => $groups,'class'=>'select2']);
                 ?>
             </fieldset>
             <?= $this->Form->button(__('Submit')) ?>

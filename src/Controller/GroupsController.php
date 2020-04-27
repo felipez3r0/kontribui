@@ -19,6 +19,7 @@ class GroupsController extends AppController
      */
     public function index()
     {
+        $this->Authorization->authorize($this->Groups->newEmptyEntity());
         $groups = $this->paginate($this->Groups);
 
         $this->set(compact('groups'));
@@ -36,6 +37,7 @@ class GroupsController extends AppController
         $group = $this->Groups->get($id, [
             'contain' => ['Areas', 'Users'],
         ]);
+        $this->Authorization->authorize($group);
 
         $this->set('group', $group);
     }
@@ -48,6 +50,8 @@ class GroupsController extends AppController
     public function add()
     {
         $group = $this->Groups->newEmptyEntity();
+        $this->Authorization->authorize($group);
+
         if ($this->request->is('post')) {
             $group = $this->Groups->patchEntity($group, $this->request->getData());
             if ($this->Groups->save($group)) {
@@ -74,6 +78,8 @@ class GroupsController extends AppController
         $group = $this->Groups->get($id, [
             'contain' => ['Areas', 'Users'],
         ]);
+        $this->Authorization->authorize($group);
+
         if ($this->request->is(['patch', 'post', 'put'])) {
             $group = $this->Groups->patchEntity($group, $this->request->getData());
             if ($this->Groups->save($group)) {
@@ -99,6 +105,8 @@ class GroupsController extends AppController
     {
         $this->request->allowMethod(['post', 'delete']);
         $group = $this->Groups->get($id);
+        $this->Authorization->authorize($group);
+        
         if ($this->Groups->delete($group)) {
             $this->Flash->success(__('The group has been deleted.'));
         } else {

@@ -23,6 +23,10 @@
                     <td><?= h($area->title) ?></td>
                 </tr>
                 <tr>
+                    <th><?= __('Controller') ?></th>
+                    <td><?= h($area->controller) ?></td>
+                </tr>
+                <tr>
                     <th><?= __('Action') ?></th>
                     <td><?= h($area->action) ?></td>
                 </tr>

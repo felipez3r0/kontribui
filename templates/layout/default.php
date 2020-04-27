@@ -14,7 +14,7 @@
  * @var \App\View\AppView $this
  */
 
-$cakeDescription = 'CakePHP: the rapid development php framework';
+$cakeDescription = 'Kontribui';
 ?>
 <!DOCTYPE html>
 <html>
@@ -32,6 +32,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 
     <?= $this->Html->css('milligram.min.css') ?>
     <?= $this->Html->css('admin.css') ?>
+    <?= $this->Html->css('select2/css/select2.min.css') ?>
 
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
@@ -43,9 +44,13 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
             <a href="/"><img src="/img/kontribui.svg" alt="Kontribui"></a>
         </div>
         <div class="top-nav-links">
+            <?= $this->Html->link(__('Projects'), ['controller'=>'projects','action' => 'index']) ?>
+            <?= $this->Html->link(__('Parts'), ['controller'=>'parts','action' => 'index']) ?>
+            <?= $this->Html->link(__('Donations'), ['controller'=>'donations','action' => 'index']) ?>
             <?= $this->Html->link(__('Areas'), ['controller'=>'areas','action' => 'index']) ?>
             <?= $this->Html->link(__('Groups'), ['controller'=>'groups','action' => 'index']) ?>
             <?= $this->Html->link(__('Users'), ['controller'=>'users','action' => 'index']) ?>
+            <?= $this->Html->link(__('Profiles'), ['controller'=>'profiles','action' => 'index']) ?>
              | 
             <a href="/users/logout">Sair (X)</a>
         </div>
@@ -58,5 +63,11 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     </main>
     <footer>
     </footer>
+    <script
+			  src="https://code.jquery.com/jquery-3.5.0.min.js"
+			  integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+			  crossorigin="anonymous"></script>
+    <?= $this->Html->script('select2/js/select2.min.js') ?>
+    <script>$(document).ready(function() {$('.select2').select2();});</script>
 </body>
 </html>
