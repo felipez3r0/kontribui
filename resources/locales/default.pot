@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2020-04-06 14:45-0300\n"
+"POT-Creation-Date: 2020-04-27 17:09-0300\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -14,75 +14,193 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: Controller/AreasController.php:54
-#: Controller/AreasController.php:79
+#: Controller/AreasController.php:59
+#: Controller/AreasController.php:86
 msgid "The area has been saved."
 msgstr ""
 
-#: Controller/AreasController.php:58
-#: Controller/AreasController.php:83
+#: Controller/AreasController.php:63
+#: Controller/AreasController.php:90
 msgid "The area could not be saved. Please, try again."
 msgstr ""
 
-#: Controller/AreasController.php:101
+#: Controller/AreasController.php:110
 msgid "The area has been deleted."
 msgstr ""
 
-#: Controller/AreasController.php:103
+#: Controller/AreasController.php:112
 msgid "The area could not be deleted. Please, try again."
 msgstr ""
 
-#: Controller/GroupsController.php:54
-#: Controller/GroupsController.php:80
-msgid "The group has been saved."
+#: Controller/DonationsController.php:61
+#: Controller/DonationsController.php:90
+msgid "The donation has been saved."
+msgstr ""
+
+#: Controller/DonationsController.php:65
+#: Controller/DonationsController.php:94
+msgid "The donation could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/DonationsController.php:116
+msgid "The donation has been deleted."
+msgstr ""
+
+#: Controller/DonationsController.php:118
+msgid "The donation could not be deleted. Please, try again."
 msgstr ""
 
 #: Controller/GroupsController.php:58
-#: Controller/GroupsController.php:84
+#: Controller/GroupsController.php:86
+msgid "The group has been saved."
+msgstr ""
+
+#: Controller/GroupsController.php:62
+#: Controller/GroupsController.php:90
 msgid "The group could not be saved. Please, try again."
 msgstr ""
 
-#: Controller/GroupsController.php:103
+#: Controller/GroupsController.php:111
 msgid "The group has been deleted."
 msgstr ""
 
-#: Controller/GroupsController.php:105
+#: Controller/GroupsController.php:113
 msgid "The group could not be deleted. Please, try again."
 msgstr ""
 
-#: Controller/UsersController.php:63
-#: Controller/UsersController.php:88
-msgid "The user has been saved."
+#: Controller/PartsController.php:60
+#: Controller/PartsController.php:89
+msgid "The part has been saved."
+msgstr ""
+
+#: Controller/PartsController.php:64
+#: Controller/PartsController.php:93
+msgid "The part could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/PartsController.php:115
+msgid "The part has been deleted."
+msgstr ""
+
+#: Controller/PartsController.php:117
+msgid "The part could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/ProfilesController.php:61
+#: Controller/ProfilesController.php:88
+msgid "The profile has been saved."
+msgstr ""
+
+#: Controller/ProfilesController.php:65
+#: Controller/ProfilesController.php:92
+msgid "The profile could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/ProfilesController.php:112
+msgid "The profile has been deleted."
+msgstr ""
+
+#: Controller/ProfilesController.php:114
+msgid "The profile could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/ProjectsController.php:65
+#: Controller/ProjectsController.php:95
+msgid "The project has been saved."
+msgstr ""
+
+#: Controller/ProjectsController.php:70
+#: Controller/ProjectsController.php:99
+msgid "The project could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/ProjectsController.php:120
+msgid "The project has been deleted."
+msgstr ""
+
+#: Controller/ProjectsController.php:122
+msgid "The project could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/TagsController.php:54
+#: Controller/TagsController.php:80
+msgid "The tag has been saved."
+msgstr ""
+
+#: Controller/TagsController.php:58
+#: Controller/TagsController.php:84
+msgid "The tag could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/TagsController.php:103
+msgid "The tag has been deleted."
+msgstr ""
+
+#: Controller/TagsController.php:105
+msgid "The tag could not be deleted. Please, try again."
 msgstr ""
 
 #: Controller/UsersController.php:67
-#: Controller/UsersController.php:92
+#: Controller/UsersController.php:94
+msgid "The user has been saved."
+msgstr ""
+
+#: Controller/UsersController.php:71
+#: Controller/UsersController.php:98
 msgid "The user could not be saved. Please, try again."
 msgstr ""
 
-#: Controller/UsersController.php:110
+#: Controller/UsersController.php:116
 msgid "The user has been deleted."
 msgstr ""
 
-#: Controller/UsersController.php:112
+#: Controller/UsersController.php:118
 msgid "The user could not be deleted. Please, try again."
 msgstr ""
 
-#: Controller/UsersController.php:134
+#: Controller/UsersController.php:141
 msgid "Invalid username or password"
 msgstr ""
 
 #: Areas/add.php:10
 #: Areas/edit.php:10
-#: Areas/index.php:17
+#: Areas/index.php:18
 #: Areas/view.php:10
-#: Areas/view.php:42
+#: Areas/view.php:46
+#: Donations/add.php:10
+#: Donations/edit.php:10
+#: Donations/index.php:18
+#: Donations/view.php:10
+#: Donations/view.php:50
 #: Groups/add.php:10
 #: Groups/edit.php:10
 #: Groups/index.php:16
 #: Groups/view.php:10
 #: Groups/view.php:39
 #: Groups/view.php:67
+#: Parts/add.php:10
+#: Parts/edit.php:10
+#: Parts/index.php:19
+#: Parts/view.php:10
+#: Parts/view.php:58
+#: Parts/view.php:85
+#: Profiles/add.php:10
+#: Profiles/edit.php:10
+#: Profiles/index.php:17
+#: Profiles/view.php:10
+#: Projects/add.php:10
+#: Projects/edit.php:10
+#: Projects/index.php:19
+#: Projects/view.php:10
+#: Projects/view.php:56
+#: Projects/view.php:83
+#: Projects/view.php:114
+#: Tags/add.php:10
+#: Tags/edit.php:10
+#: Tags/index.php:16
+#: Tags/view.php:10
+#: Tags/view.php:42
+#: Tags/view.php:75
 #: Users/add.php:10
 #: Users/edit.php:10
 #: Users/index.php:17
@@ -101,22 +219,50 @@ msgstr ""
 msgid "Add Area"
 msgstr ""
 
-#: Areas/add.php:25
-#: Areas/edit.php:30
+#: Areas/add.php:26
+#: Areas/edit.php:31
+#: Donations/add.php:26
+#: Donations/edit.php:31
 #: Groups/add.php:25
 #: Groups/edit.php:30
+#: Parts/add.php:29
+#: Parts/edit.php:34
+#: Profiles/add.php:25
+#: Profiles/edit.php:30
+#: Projects/add.php:25
+#: Projects/edit.php:30
+#: Tags/add.php:25
+#: Tags/edit.php:30
 #: Users/add.php:26
 #: Users/edit.php:31
 msgid "Submit"
 msgstr ""
 
 #: Areas/edit.php:12
-#: Areas/index.php:29
-#: Areas/view.php:51
+#: Areas/index.php:31
+#: Areas/view.php:55
+#: Donations/edit.php:12
+#: Donations/index.php:31
+#: Donations/view.php:63
 #: Groups/edit.php:12
 #: Groups/index.php:27
 #: Groups/view.php:49
 #: Groups/view.php:78
+#: Parts/edit.php:12
+#: Parts/index.php:33
+#: Parts/view.php:69
+#: Parts/view.php:94
+#: Profiles/edit.php:12
+#: Profiles/index.php:29
+#: Projects/edit.php:12
+#: Projects/index.php:33
+#: Projects/view.php:65
+#: Projects/view.php:94
+#: Projects/view.php:127
+#: Tags/edit.php:12
+#: Tags/index.php:27
+#: Tags/view.php:55
+#: Tags/view.php:88
 #: Users/edit.php:12
 #: Users/index.php:29
 #: Users/view.php:55
@@ -124,14 +270,37 @@ msgid "Delete"
 msgstr ""
 
 #: Areas/edit.php:14
-#: Areas/index.php:29
+#: Areas/index.php:31
 #: Areas/view.php:12
-#: Areas/view.php:51
+#: Areas/view.php:55
+#: Donations/edit.php:14
+#: Donations/index.php:31
+#: Donations/view.php:12
+#: Donations/view.php:63
 #: Groups/edit.php:14
 #: Groups/index.php:27
 #: Groups/view.php:12
 #: Groups/view.php:49
 #: Groups/view.php:78
+#: Parts/edit.php:14
+#: Parts/index.php:33
+#: Parts/view.php:12
+#: Parts/view.php:69
+#: Parts/view.php:94
+#: Profiles/edit.php:14
+#: Profiles/index.php:29
+#: Profiles/view.php:12
+#: Projects/edit.php:14
+#: Projects/index.php:33
+#: Projects/view.php:12
+#: Projects/view.php:65
+#: Projects/view.php:94
+#: Projects/view.php:127
+#: Tags/edit.php:14
+#: Tags/index.php:27
+#: Tags/view.php:12
+#: Tags/view.php:55
+#: Tags/view.php:88
 #: Users/edit.php:14
 #: Users/index.php:29
 #: Users/view.php:12
@@ -150,57 +319,107 @@ msgid "New Area"
 msgstr ""
 
 #: Areas/index.php:9
-#: layout/default.php:46
+#: layout/default.php:50
 msgid "Areas"
 msgstr ""
 
-#: Areas/index.php:27
-#: Areas/view.php:49
+#: Areas/index.php:29
+#: Areas/view.php:53
+#: Donations/index.php:29
+#: Donations/view.php:61
 #: Groups/index.php:25
 #: Groups/view.php:47
 #: Groups/view.php:76
+#: Parts/index.php:31
+#: Parts/view.php:67
+#: Parts/view.php:92
+#: Profiles/index.php:27
+#: Projects/index.php:31
+#: Projects/view.php:63
+#: Projects/view.php:92
+#: Projects/view.php:125
+#: Tags/index.php:25
+#: Tags/view.php:53
+#: Tags/view.php:86
 #: Users/index.php:27
 #: Users/view.php:53
-#: View/Helper/PaginatorHelper.php:1266
 msgid "View"
 msgstr ""
 
-#: Areas/index.php:28
-#: Areas/view.php:50
+#: Areas/index.php:30
+#: Areas/view.php:54
+#: Donations/index.php:30
+#: Donations/view.php:62
 #: Groups/index.php:26
 #: Groups/view.php:48
 #: Groups/view.php:77
+#: Parts/index.php:32
+#: Parts/view.php:68
+#: Parts/view.php:93
+#: Profiles/index.php:28
+#: Projects/index.php:32
+#: Projects/view.php:64
+#: Projects/view.php:93
+#: Projects/view.php:126
+#: Tags/index.php:26
+#: Tags/view.php:54
+#: Tags/view.php:87
 #: Users/index.php:28
 #: Users/view.php:54
 msgid "Edit"
 msgstr ""
 
-#: Areas/index.php:38
+#: Areas/index.php:40
+#: Donations/index.php:40
 #: Groups/index.php:36
+#: Parts/index.php:42
+#: Profiles/index.php:38
+#: Projects/index.php:42
+#: Tags/index.php:36
 #: Users/index.php:38
 msgid "first"
 msgstr ""
 
-#: Areas/index.php:39
+#: Areas/index.php:41
+#: Donations/index.php:41
 #: Groups/index.php:37
+#: Parts/index.php:43
+#: Profiles/index.php:39
+#: Projects/index.php:43
+#: Tags/index.php:37
 #: Users/index.php:39
 msgid "previous"
 msgstr ""
 
-#: Areas/index.php:41
+#: Areas/index.php:43
+#: Donations/index.php:43
 #: Groups/index.php:39
+#: Parts/index.php:45
+#: Profiles/index.php:41
+#: Projects/index.php:45
+#: Tags/index.php:39
 #: Users/index.php:41
 msgid "next"
 msgstr ""
 
-#: Areas/index.php:42
+#: Areas/index.php:44
+#: Donations/index.php:44
 #: Groups/index.php:40
+#: Parts/index.php:46
+#: Profiles/index.php:42
+#: Projects/index.php:46
+#: Tags/index.php:40
 #: Users/index.php:42
 msgid "last"
 msgstr ""
 
-#: Areas/index.php:44
+#: Areas/index.php:46
+#: Donations/index.php:46
 #: Groups/index.php:42
+#: Parts/index.php:48
+#: Profiles/index.php:44
+#: Projects/index.php:48
+#: Tags/index.php:42
 #: Users/index.php:44
 msgid "Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total"
 msgstr ""
@@ -211,35 +430,144 @@ msgstr ""
 
 #: Areas/view.php:22
 #: Groups/view.php:37
+#: Parts/view.php:84
+#: Projects/view.php:22
+#: Projects/view.php:55
+#: Tags/view.php:22
+#: Tags/view.php:70
 msgid "Title"
 msgstr ""
 
 #: Areas/view.php:26
+msgid "Controller"
+msgstr ""
+
+#: Areas/view.php:30
 #: Groups/view.php:38
 msgid "Action"
 msgstr ""
 
-#: Areas/view.php:30
-#: Areas/view.php:40
+#: Areas/view.php:34
+#: Areas/view.php:44
+#: Donations/view.php:30
+#: Donations/view.php:44
 #: Groups/view.php:26
 #: Groups/view.php:36
 #: Groups/view.php:63
+#: Parts/view.php:30
+#: Parts/view.php:54
+#: Parts/view.php:83
+#: Profiles/view.php:30
+#: Projects/view.php:30
+#: Projects/view.php:54
+#: Projects/view.php:79
+#: Projects/view.php:108
+#: Tags/view.php:26
+#: Tags/view.php:36
+#: Tags/view.php:69
 #: Users/view.php:34
 #: Users/view.php:44
 msgid "Id"
 msgstr ""
 
-#: Areas/view.php:35
+#: Areas/view.php:39
 #: Users/view.php:39
 msgid "Related Groups"
 msgstr ""
 
-#: Areas/view.php:41
+#: Areas/view.php:45
+#: Donations/view.php:45
 #: Groups/view.php:22
 #: Groups/view.php:64
+#: Parts/view.php:22
+#: Projects/view.php:109
+#: Tags/view.php:37
 #: Users/view.php:22
 #: Users/view.php:45
 msgid "Name"
+msgstr ""
+
+#: Donations/add.php:11
+#: Donations/edit.php:16
+#: Donations/view.php:13
+msgid "List Donations"
+msgstr ""
+
+#: Donations/add.php:18
+msgid "Add Donation"
+msgstr ""
+
+#: Donations/edit.php:23
+#: Donations/view.php:11
+msgid "Edit Donation"
+msgstr ""
+
+#: Donations/index.php:8
+#: Donations/view.php:14
+msgid "New Donation"
+msgstr ""
+
+#: Donations/index.php:9
+#: layout/default.php:49
+msgid "Donations"
+msgstr ""
+
+#: Donations/view.php:12
+msgid "Delete Donation"
+msgstr ""
+
+#: Donations/view.php:22
+#: Parts/view.php:26
+msgid "Project"
+msgstr ""
+
+#: Donations/view.php:26
+#: Profiles/view.php:26
+#: Projects/view.php:26
+msgid "User"
+msgstr ""
+
+#: Donations/view.php:34
+#: Parts/view.php:55
+#: Projects/view.php:80
+msgid "DateContact"
+msgstr ""
+
+#: Donations/view.php:39
+#: Projects/view.php:103
+#: Tags/view.php:31
+msgid "Related Parts"
+msgstr ""
+
+#: Donations/view.php:46
+#: Parts/view.php:43
+#: Projects/view.php:43
+#: Projects/view.php:110
+#: Tags/view.php:38
+#: Tags/view.php:71
+msgid "Description"
+msgstr ""
+
+#: Donations/view.php:47
+#: Parts/view.php:34
+#: Projects/view.php:111
+#: Tags/view.php:39
+msgid "Quantity"
+msgstr ""
+
+#: Donations/view.php:48
+#: Parts/view.php:38
+#: Projects/view.php:112
+#: Tags/view.php:40
+msgid "Balance"
+msgstr ""
+
+#: Donations/view.php:49
+#: Parts/view.php:56
+#: Projects/view.php:81
+#: Projects/view.php:113
+#: Tags/view.php:41
+msgid "Project Id"
 msgstr ""
 
 #: Groups/add.php:11
@@ -263,7 +591,7 @@ msgid "New Group"
 msgstr ""
 
 #: Groups/index.php:9
-#: layout/default.php:47
+#: layout/default.php:51
 msgid "Groups"
 msgstr ""
 
@@ -289,6 +617,159 @@ msgstr ""
 msgid "Password"
 msgstr ""
 
+#: Parts/add.php:11
+#: Parts/edit.php:16
+#: Parts/view.php:13
+msgid "List Parts"
+msgstr ""
+
+#: Parts/add.php:18
+msgid "Add Part"
+msgstr ""
+
+#: Parts/edit.php:23
+#: Parts/view.php:11
+msgid "Edit Part"
+msgstr ""
+
+#: Parts/index.php:8
+#: Parts/view.php:14
+msgid "New Part"
+msgstr ""
+
+#: Parts/index.php:9
+#: layout/default.php:48
+msgid "Parts"
+msgstr ""
+
+#: Parts/view.php:12
+msgid "Delete Part"
+msgstr ""
+
+#: Parts/view.php:49
+#: Projects/view.php:74
+msgid "Related Donations"
+msgstr ""
+
+#: Parts/view.php:57
+#: Projects/view.php:82
+#: Tags/view.php:74
+msgid "User Id"
+msgstr ""
+
+#: Parts/view.php:78
+#: Projects/view.php:49
+msgid "Related Tags"
+msgstr ""
+
+#: Profiles/add.php:11
+#: Profiles/edit.php:16
+#: Profiles/view.php:13
+msgid "List Profiles"
+msgstr ""
+
+#: Profiles/add.php:18
+msgid "Add Profile"
+msgstr ""
+
+#: Profiles/edit.php:23
+#: Profiles/view.php:11
+msgid "Edit Profile"
+msgstr ""
+
+#: Profiles/index.php:8
+#: Profiles/view.php:14
+msgid "New Profile"
+msgstr ""
+
+#: Profiles/index.php:9
+#: layout/default.php:53
+msgid "Profiles"
+msgstr ""
+
+#: Profiles/view.php:12
+msgid "Delete Profile"
+msgstr ""
+
+#: Profiles/view.php:22
+msgid "TaxId"
+msgstr ""
+
+#: Profiles/view.php:35
+msgid "ContactInformation"
+msgstr ""
+
+#: Projects/add.php:11
+#: Projects/edit.php:16
+#: Projects/view.php:13
+msgid "List Projects"
+msgstr ""
+
+#: Projects/add.php:18
+msgid "Add Project"
+msgstr ""
+
+#: Projects/edit.php:23
+#: Projects/view.php:11
+msgid "Edit Project"
+msgstr ""
+
+#: Projects/index.php:8
+#: Projects/view.php:14
+msgid "New Project"
+msgstr ""
+
+#: Projects/index.php:9
+#: layout/default.php:47
+msgid "Projects"
+msgstr ""
+
+#: Projects/view.php:12
+msgid "Delete Project"
+msgstr ""
+
+#: Projects/view.php:34
+#: Tags/view.php:73
+msgid "Status"
+msgstr ""
+
+#: Projects/view.php:38
+#: Tags/view.php:72
+msgid "DateCreated"
+msgstr ""
+
+#: Tags/add.php:11
+#: Tags/edit.php:16
+#: Tags/view.php:13
+msgid "List Tags"
+msgstr ""
+
+#: Tags/add.php:18
+msgid "Add Tag"
+msgstr ""
+
+#: Tags/edit.php:23
+#: Tags/view.php:11
+msgid "Edit Tag"
+msgstr ""
+
+#: Tags/index.php:8
+#: Tags/view.php:14
+msgid "New Tag"
+msgstr ""
+
+#: Tags/index.php:9
+msgid "Tags"
+msgstr ""
+
+#: Tags/view.php:12
+msgid "Delete Tag"
+msgstr ""
+
+#: Tags/view.php:64
+msgid "Related Projects"
+msgstr ""
+
 #: Users/add.php:11
 #: Users/edit.php:16
 #: Users/view.php:13
@@ -310,7 +791,7 @@ msgid "New User"
 msgstr ""
 
 #: Users/index.php:9
-#: layout/default.php:48
+#: layout/default.php:52
 msgid "Users"
 msgstr ""
 

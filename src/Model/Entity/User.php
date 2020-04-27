@@ -4,6 +4,7 @@ declare(strict_types=1);
 namespace App\Model\Entity;
 
 use Cake\ORM\Entity;
+use Cake\ORM\TableRegistry;
 use Authentication\PasswordHasher\DefaultPasswordHasher;
 /**
  * User Entity
@@ -47,5 +48,19 @@ class User extends Entity
         if (strlen($password) > 0) {
             return (new DefaultPasswordHasher())->hash($password);
         }
+    }
+    
+    protected function _getAreasList()
+    {
+        $users = TableRegistry::getTableLocator()->get('Users');
+        $user = $users->find()->where(['id'=>$this->id])->contain(['Groups'=>['Areas']])->first();
+        $areas = [];
+        foreach($user->groups as $group){
+            foreach($group->areas as $area){
+                $areas[] = $area->controller.'->'.$area->action;
+            }
+        }
+
+        return $areas;
     }    
 }

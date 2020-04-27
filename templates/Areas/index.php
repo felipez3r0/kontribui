@@ -13,6 +13,7 @@
                 <tr>
                     <th><?= $this->Paginator->sort('id') ?></th>
                     <th><?= $this->Paginator->sort('title') ?></th>
+                    <th><?= $this->Paginator->sort('controller') ?></th>
                     <th><?= $this->Paginator->sort('action') ?></th>
                     <th class="actions"><?= __('Actions') ?></th>
                 </tr>
@@ -22,6 +23,7 @@
                 <tr>
                     <td><?= $this->Number->format($area->id) ?></td>
                     <td><?= h($area->title) ?></td>
+                    <td><?= h($area->controller) ?></td>
                     <td><?= h($area->action) ?></td>
                     <td class="actions">
                         <?= $this->Html->link(__('View'), ['action' => 'view', $area->id]) ?>

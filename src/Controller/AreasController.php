@@ -19,6 +19,7 @@ class AreasController extends AppController
      */
     public function index()
     {
+        $this->Authorization->authorize($this->Areas->newEmptyEntity());
         $areas = $this->paginate($this->Areas);
 
         $this->set(compact('areas'));
@@ -36,6 +37,8 @@ class AreasController extends AppController
         $area = $this->Areas->get($id, [
             'contain' => ['Groups'],
         ]);
+        $this->Authorization->authorize($area);
+        
 
         $this->set('area', $area);
     }
@@ -48,6 +51,8 @@ class AreasController extends AppController
     public function add()
     {
         $area = $this->Areas->newEmptyEntity();
+        $this->Authorization->authorize($area);
+        
         if ($this->request->is('post')) {
             $area = $this->Areas->patchEntity($area, $this->request->getData());
             if ($this->Areas->save($area)) {
@@ -73,6 +78,8 @@ class AreasController extends AppController
         $area = $this->Areas->get($id, [
             'contain' => ['Groups'],
         ]);
+        $this->Authorization->authorize($area);
+
         if ($this->request->is(['patch', 'post', 'put'])) {
             $area = $this->Areas->patchEntity($area, $this->request->getData());
             if ($this->Areas->save($area)) {
@@ -97,6 +104,8 @@ class AreasController extends AppController
     {
         $this->request->allowMethod(['post', 'delete']);
         $area = $this->Areas->get($id);
+        $this->Authorization->authorize($area);
+
         if ($this->Areas->delete($area)) {
             $this->Flash->success(__('The area has been deleted.'));
         } else {

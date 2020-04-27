@@ -68,6 +68,11 @@ class AreasTable extends Table
             ->allowEmptyString('title');
 
         $validator
+            ->scalar('controller')
+            ->maxLength('controller', 200)
+            ->allowEmptyString('controller');
+
+        $validator
             ->scalar('action')
             ->maxLength('action', 200)
             ->allowEmptyString('action');

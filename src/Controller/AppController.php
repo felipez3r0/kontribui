@@ -50,7 +50,8 @@ class AppController extends Controller
          */
         $this->loadComponent('FormProtection');
 
-        // Add this line to check authentication result and lock your site
-        $this->loadComponent('Authentication.Authentication');        
+        // Auth
+        $this->loadComponent('Authentication.Authentication');  
+        $this->loadComponent('Authorization.Authorization');      
     }
 }
