@@ -152,6 +152,32 @@ th {
     justify-content: center;
 }
 
+/* Website */
+.text-center{
+    text-align: center;
+}
+
+.text-vcenter{
+    vertical-align: middle;
+}
+
+.border-line{
+    border-bottom: 1px solid #777;
+    margin-bottom: 2px;
+}
+
+.home-featured{
+    font-size: 1.8em;
+}
+
+.home-featured .column:nth-child(2){
+    margin-top: 10px;
+}
+
+.home-featured i, .icon-xl{
+    font-size: 2.5em;
+}
+
 @media screen and (max-width: 640px) {
     .top-nav {
         margin: 0 auto;
