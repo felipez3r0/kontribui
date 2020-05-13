@@ -80,6 +80,23 @@ class ProjectPolicy
     }
 
     /**
+     * Check if $user can list Project
+     *
+     * @param Authorization\IdentityInterface $user The user.
+     * @param App\Model\Entity\Project $resource
+     * @return bool
+     */
+    public function canList(IdentityInterface $user, Project $resource)
+    {
+        $areas = $user->getOriginalData()->areas_list;
+        if(in_array('projects->list',$areas)){
+            return true;
+        }
+
+        return false;
+    }    
+
+    /**
      * Check if $user can view Project
      *
      * @param Authorization\IdentityInterface $user The user.

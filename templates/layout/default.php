@@ -31,7 +31,7 @@ $cakeDescription = 'Kontribui';
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
 
     <?= $this->Html->css('milligram.min.css') ?>
-    <?= $this->Html->css('admin.css') ?>
+    <?= $this->Html->css('custom-styles.css') ?>
     <?= $this->Html->css('select2/css/select2.min.css') ?>
 
     <?= $this->fetch('meta') ?>

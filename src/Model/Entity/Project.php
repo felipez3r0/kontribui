@@ -42,4 +42,16 @@ class Project extends Entity
         'parts' => true,
         'tags' => true,
     ];
+
+    public function getStatusName()
+    {
+        switch($this->status){
+            case 1:
+                return __('Active');
+            break;
+            case 0:
+                return __('Inactive/Hidden');
+            break;            
+        }
+    }    
 }

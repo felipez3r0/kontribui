@@ -18,8 +18,8 @@
                 <legend><?= __('Add Group') ?></legend>
                 <?php
                     echo $this->Form->control('name');
-                    echo $this->Form->control('areas._ids', ['options' => $areas]);
-                    echo $this->Form->control('users._ids', ['options' => $users]);
+                    echo $this->Form->control('areas._ids', ['options' => $areas,'class'=>'select2']);
+                    echo $this->Form->control('users._ids', ['options' => $users,'class'=>'select2']);
                 ?>
             </fieldset>
             <?= $this->Form->button(__('Submit')) ?>

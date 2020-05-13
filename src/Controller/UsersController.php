@@ -19,7 +19,7 @@ class UsersController extends AppController
         parent::beforeFilter($event);
         // Configure the login action to not require authentication, preventing
         // the infinite redirect loop issue
-        $this->Authentication->addUnauthenticatedActions(['login']);
+        $this->Authentication->addUnauthenticatedActions(['login','register']);
     }
 
     /**
@@ -63,6 +63,7 @@ class UsersController extends AppController
 
         if ($this->request->is('post')) {
             $user = $this->Users->patchEntity($user, $this->request->getData());
+
             if ($this->Users->save($user)) {
                 $this->Flash->success(__('The user has been saved.'));
 
@@ -73,6 +74,35 @@ class UsersController extends AppController
         $groups = $this->Users->Groups->find('list', ['limit' => 200]);
         $this->set(compact('user', 'groups'));
     }
+
+    /**
+     * Add method
+     *
+     * @return \Cake\Http\Response|null|void Redirects on successful add, renders view otherwise.
+     */
+    public function register()
+    {
+        $user = $this->Users->newEmptyEntity();
+        $this->Authorization->skipAuthorization();
+        $this->viewBuilder()->setLayout('site');
+
+        if ($this->request->is('post')) {
+            $user = $this->Users->patchEntity($user, $this->request->getData());
+            // TODO (a) - improve this, to avoid errors if anyone delete the group 2 (Users)
+            $usersgroup = $this->Users->Groups->get(2,[]);
+            $user['groups'] = [$usersgroup];    
+            // END TODO (a)
+
+            if ($this->Users->save($user)) {
+                $this->Flash->success(__('The user has been saved.'));
+
+                return $this->redirect(['controller'=>'projects','action' => 'list']);
+            }
+            $this->Flash->error(__('The user could not be saved. Please, try again.'));
+        }
+        $groups = $this->Users->Groups->find('list', ['limit' => 200]);
+        $this->set(compact('user', 'groups'));
+    }    
 
     /**
      * Edit method
@@ -124,14 +154,27 @@ class UsersController extends AppController
     public function login()
     {
         $this->Authorization->skipAuthorization();
+        $this->viewBuilder()->setLayout('site');
+
         $this->request->allowMethod(['get', 'post']);
         $result = $this->Authentication->getResult();
         // regardless of POST or GET, redirect if user is logged in
         if ($result->isValid()) {
+            
+            // TODO (a) - improve this group checking
+            $user = $this->Users->get($this->Authentication->getIdentity()->id, [
+                'contain' => ['Groups'],
+            ]);          
+            // checking if the user is admin (admin group)
+            $admin = ($user->groups[0]->id != 1) ? false : true;
+            $this->getRequest()->getSession()->write('admin',$admin);   
+            // END TODO (a)
+
             // redirect to /articles after login success
             $redirect = $this->request->getQuery('redirect', [
-                'controller' => 'Users',
-                'action' => 'index',
+                'controller' => 'Pages',
+                'action' => 'display',
+                'home'
             ]);
 
             return $this->redirect($redirect);
