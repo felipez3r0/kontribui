@@ -30,6 +30,26 @@ class ProjectsController extends AppController
     }
 
     /**
+     * Index method
+     *
+     * @return \Cake\Http\Response|null|void Renders view
+     */
+    public function list()
+    {
+        $this->viewBuilder()->setLayout('site');
+        $user = $this->Authentication->getIdentity();
+        $this->Authorization->authorize($this->Projects->newEmptyEntity());
+
+        $this->paginate = [
+            'conditions' => ['user_id' => $user->id],
+        ];
+
+        $projects = $this->paginate($this->Projects);
+
+        $this->set(compact('projects'));
+    }    
+
+    /**
      * View method
      *
      * @param string|null $id Project id.
@@ -55,6 +75,13 @@ class ProjectsController extends AppController
     {
         $project = $this->Projects->newEmptyEntity();
         $this->Authorization->authorize($project);
+
+        // Change the layout for common users
+        $admin = $this->getRequest()->getSession()->read('admin');
+        if(!$admin){
+            $this->viewBuilder()->setLayout('site');
+        }
+
         if ($this->request->is('post')) {
             $project = $this->Projects->patchEntity($project, $this->request->getData());
             $project->user = $this->Authentication->getIdentity()->getOriginalData();
@@ -63,8 +90,11 @@ class ProjectsController extends AppController
 
             if ($this->Projects->save($project)) {
                 $this->Flash->success(__('The project has been saved.'));
-
-                return $this->redirect(['action' => 'index']);
+                if(!$admin){
+                    return $this->redirect(['action' => 'list']);
+                } else {
+                    return $this->redirect(['action' => 'index']);
+                }
             }
 
             $this->Flash->error(__('The project could not be saved. Please, try again.'));
@@ -84,10 +114,22 @@ class ProjectsController extends AppController
      */
     public function edit($id = null)
     {
-        $project = $this->Projects->get($id, [
-            'contain' => ['Tags'],
-        ]);
-        $this->Authorization->authorize($project);
+        // Change the layout/permission for common users
+        $admin = $this->getRequest()->getSession()->read('admin');
+        if(!$admin){
+            $this->viewBuilder()->setLayout('site');
+            $contain = [
+                'contain' => ['Tags'],
+                'conditions' => ['user_id'=>$this->Authentication->getIdentity()->getOriginalData()->id]
+            ];            
+        } else {
+            $contain = [
+                'contain' => ['Tags']
+            ];
+        }
+
+        $project = $this->Projects->get($id, $contain);
+        $this->Authorization->authorize($project);    
 
         if ($this->request->is(['patch', 'post', 'put'])) {
             $project = $this->Projects->patchEntity($project, $this->request->getData());
