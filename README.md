@@ -2,6 +2,9 @@
 
 ![Kontribui](/webroot/img/kontribui.svg)
 
+## Test the project right now!
+Visit our website: http://kontribui.com.br
+
 ## Configuration
 
 ### Requisites
